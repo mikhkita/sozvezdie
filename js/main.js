@@ -83,7 +83,7 @@ $(document).ready(function(){
     // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
 
-    $('.head_slider').slick({
+    $('.head_slide_h2').slick({
       autoplay: true,
       speed: 1000,
       dots: true,
