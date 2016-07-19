@@ -192,9 +192,11 @@ input:-moz-placeholder {
 	.b-yellow-butt:hover{
 		background-color: #e8b526;
         color: #000;
-        border: none;
-        padding-top: 17px;
 	}
+    .b-yellow-butt:active {
+        border: none;
+        margin-top: 2px;
+    }
 .b-title {
     padding-top: 65px;
     text-transform: uppercase;
@@ -232,6 +234,11 @@ input:-moz-placeholder {
     .b-head .b-yellow-butt {
         margin-top: 15px;
     }
+
+        .b-head .b-yellow-butt:active {
+            border: none;
+            margin-top: 17px;
+        }
 
     .b-head .b-head_slider {
         margin-top: 50px;
@@ -274,6 +281,11 @@ input:-moz-placeholder {
                 top: -40px;
                 left: 37%;
             }
+
+                .b-head .slide-bott-text .b-yellow-butt:active {
+                    border: none;
+                    top: -38px;
+                }
             .b-head .slide-bott-text .p1 {
                 padding-top: 40px;
                 font-family: 'Days';
@@ -346,6 +358,7 @@ input:-moz-placeholder {
     .b-show_video .video-open {
         margin-top: 50px;
         padding-bottom: 70px;
+        cursor: pointer;
     }
         .b-show_video .video-open .video {
             border: 5px solid #ffc90b;
@@ -437,6 +450,10 @@ input:-moz-placeholder {
         width: 360px;
         margin: 0 auto;
     }
+        .b-intrested .b-yellow-butt:active {
+            border: none;
+            margin-top: 2px;
+        }
     .b-intrested .intrested-steps {
         position: absolute;
         top: -30px;
@@ -595,6 +612,10 @@ input:-moz-placeholder {
     margin-top: 35px;
     width: 360px;
 }
+        .b-ten_points .b-yellow-butt:active {
+            border: none;
+            margin-top: 37px;
+        }
 
 
 .b-reviews {
@@ -800,6 +821,10 @@ input:-moz-placeholder {
                 width: 120px;
                 margin-top: -11px;
             }
+                .more_inform .bottom_name .b-yellow-butt:active {
+                    border: none;
+                    margin-top: -9px;
+                }
             .b-partners .b-partners-cont p span {
                 font-weight: bold;
                 font-family: 'RobotoBold';
@@ -808,6 +833,10 @@ input:-moz-placeholder {
             margin-top: 40px;
             width: 120px;
         }
+                .b-partners .b-partners-cont .b-yellow-butt:active {
+                    border: none;
+                    margin-top: 42px;
+                }
     .b-partners .b-partners-bottom {
         margin-top: 100px;
         border-top: 3px solid #ffd703;
@@ -817,6 +846,11 @@ input:-moz-placeholder {
             margin: 0 auto;
             margin-top: -26px;
         }
+        .b-partners .b-partners-bottom .b-yellow-butt:active {
+            border: none;
+            margin-top: -24px;
+        }
+
 
 .b-map .my_map_coord {
     color: #000;
@@ -904,6 +938,7 @@ input:-moz-placeholder {
             border-radius: 7px;
             margin-top: 15px;
             width: 253px;
+            border: 1px solid #b0b0b0;
         }
             .b-popup .form input:first {
                 margin-top: 0px;
@@ -939,6 +974,10 @@ input:-moz-placeholder {
         .b-popup .form .b-yellow-butt:hover{
             background-color: #9c5f38;
             color: #fff;
+        }
+        .b-popup .form .b-yellow-butt:active {
+            border: none;
+            margin-top: 17px !important;
         }
 
     .fancybox-skin {
