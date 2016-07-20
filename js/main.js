@@ -140,4 +140,5 @@ $(document).ready(function(){
 
     pic = new Image();
     pic.src="img/modal_fon.jpg";
+
 });

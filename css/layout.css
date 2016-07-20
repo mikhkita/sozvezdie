@@ -267,7 +267,7 @@ input:-moz-placeholder {
                 color: #f8e12b;
             }
         .b-head .slide-img {
-            margin-bottom: -3px;
+            margin-bottom: -5px;
         }
             .b-head .slide-img img {
                 margin: 0 auto;
@@ -284,7 +284,7 @@ input:-moz-placeholder {
 
                 .b-head .slide-bott-text .b-yellow-butt:active {
                     border: none;
-                    top: -38px;
+                    top: -40px;
                 }
             .b-head .slide-bott-text .p1 {
                 padding-top: 40px;
@@ -449,16 +449,21 @@ input:-moz-placeholder {
     .b-intrested .b-yellow-butt {
         width: 360px;
         margin: 0 auto;
+        margin-bottom: 2px;
     }
         .b-intrested .b-yellow-butt:active {
             border: none;
             margin-top: 2px;
         }
+            
     .b-intrested .intrested-steps {
         position: absolute;
         top: -30px;
         right: 135px;
     }
+        .b-intrested .b-yellow-butt:active + .intrested-steps {
+                top: -32px;
+            }
     .b-intrested .intrested-steps h3 {
         font-family: 'Days';
         font-size: 17px;
@@ -972,8 +977,7 @@ input:-moz-placeholder {
         width: 425px;
     }
         .b-popup .form .b-yellow-butt:hover{
-            background-color: #9c5f38;
-            color: #fff;
+            background-color: #e8b526;
         }
         .b-popup .form .b-yellow-butt:active {
             border: none;
@@ -982,7 +986,48 @@ input:-moz-placeholder {
 
     .fancybox-skin {
         background: none !important;
+
     }
+
+.b-thanks {
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.b-thanks h3 {
+    padding-top: 65px;
+    text-transform: uppercase;
+    font-family: 'Days';
+    font-size: 24px;
+    color: #ffea00;
+}
+.b-thanks h4 {
+    margin-top: 20px;
+    font-family: 'Days';
+    font-size: 18px;
+    color: #ffea00; 
+}
+.b-thanks .b-yellow-butt {
+    margin: 0 auto;
+        border: none;
+        display: block;
+        color: #313131;
+        text-transform: uppercase;
+        font-family: 'LatoBold';
+        font-size: 14px;
+        padding: 15px 30px 13px;
+        background-color: #ffd703;
+        border-bottom: 2px solid #9c5f38;
+        border-radius: 25px;
+        width: 200px;
+        margin-top: 30px;
+    }
+        .b-thanks .b-yellow-butt:hover{
+            background-color: #e8b526;
+        }
+        .b-thanks .b-yellow-butt:active {
+            border: none;
+            margin-top: 32px !important;
+        }
 	
 @media screen and (max-width: 1250px){
 	
