@@ -45,7 +45,7 @@ $(document).ready(function(){
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
-     var myPlace = new google.maps.LatLng(55.676478,37.534406);
+     var myPlace = new google.maps.LatLng(55.676674, 37.535385);
      var myOptions = {
          zoom: 16,
          center: myPlace,

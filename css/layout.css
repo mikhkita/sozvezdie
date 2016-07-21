@@ -100,7 +100,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1052px;
+	min-width: 1102px;
 	text-align: center;
 	font-family: 'LatoLight';
 	overflow-x: hidden;
@@ -534,6 +534,7 @@ input:-moz-placeholder {
     font-size: 21px;
     color: #242424;
     text-align: left;
+    overflow-x: hidden;
 }
     .b-that_get .that_get-cont span {
         font-family: 'LatoSemibold';
@@ -547,6 +548,7 @@ input:-moz-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 .that_get_after_img-1 {
     position: absolute;
@@ -585,6 +587,7 @@ input:-moz-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
     .b-that_get .that_get-2 .that_get-star {
         padding-top: 98px;
@@ -600,6 +603,7 @@ input:-moz-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
     .b-that_get .that_get-3 .that_get-star {
         padding-top: 102px;
@@ -615,6 +619,7 @@ input:-moz-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
     .b-that_get .that_get-4 .that_get-star {
         padding-top: 85px;
@@ -630,6 +635,7 @@ input:-moz-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
     .b-that_get .that_get-5 .that_get-star {
         padding-top: 109px;
@@ -831,7 +837,7 @@ input:-moz-placeholder {
     padding-top: 80px;
 }
     .b-partners img {
-        width: 680px;
+        width: 650px;
     }
     .b-partners .b-partners-cont {
         width: 370px;
