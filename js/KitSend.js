@@ -105,7 +105,9 @@ $(document).ready(function(){
 				success: function(msg){
 					var $form;
 					if( msg == "1" ){
-						$form = $thanks;
+						window.location.href="thanks.html";
+						return true;
+						//$form = $thanks;
 					}else{
 						$form = $("#b-popup-error");
 					}

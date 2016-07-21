@@ -31,7 +31,7 @@
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyBKzJW1M9eOS-X030cYctYYsSPn_30dX5w"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/my_tabs.js"></script>
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
@@ -46,7 +46,7 @@
 			</div>
 			<div class="b-date-cont right">
 				<a href="tel:+71234567890"><h2>+7 (123) <span>45 67 890</span></h2></a>
-				<a href="#" class="b-yellow-butt fancy" data-block="#b-popup-1">Заказать звонок</a>
+				<a href="#" class="b-yellow-butt fancy" data-block="#b-popup-3">Заказать звонок</a>
 			</div>
 		</div>
 		<div class="b b-head_slider">
@@ -153,10 +153,16 @@
 					Единственная франшиза, основанная<br>
 					на методике Монтесори.
 				</div>
+				<div class="that_get_after_img-1 right">
+					<img src="img/b-that-get-1.png">
+				</div>
 			</div>
 		</div>
 		<div class="that_get-2">
 			<div class="b-block clearfix">
+				<div class="that_get_after_img-2 left">
+					<img src="img/b-that-get-2.png">
+				</div>
 				<div class="that_get-cont right">
 					Самое длительное и качественное<br> 
 					обучение персонала. <span>Более 100 часов<br>
@@ -181,10 +187,16 @@
 					рекламы, продвижения в социальных сетях и<br>
 					прочих инструментов.
 				</div>
+				<div class="that_get_after_img-3 right">
+					<img src="img/b-that-get-3.png">
+				</div>
 			</div>
 		</div>
 		<div class="that_get-4">
 			<div class="b-block clearfix">
+				<div class="that_get_after_img-4 left">
+					<img src="img/b-that-get-4.png">
+				</div>
 				<div class="that_get-cont right">
 					<span>Собственное програмное обеспечение</span> учета<br>
 					продаж и увеличения лояльности клиентов. Вы<br>
@@ -208,6 +220,9 @@
 					проекта.</span> На всех этапах нашего<br>
 					партнёрства Вас поддержат наши<br>
 					опытные специалисты. 
+				</div>
+				<div class="that_get_after_img-5 right">
+					<img src="img/b-that-get-5.png">
 				</div>
 			</div>
 		</div>
@@ -358,7 +373,7 @@
 			</div>
 		</div>
 		<div class="b-partners-bottom hide_inform">
-			<a href="#" class="b-yellow-butt fancy" data-block="#b-popup-1">оставить заявку</a>
+			<a href="#" class="b-yellow-butt fancy" data-block="#b-popup-3">оставить заявку</a>
 		</div>
 	</div>
 	<div class="b b-map">
@@ -376,8 +391,8 @@
 			</div>
 		</div>
 	</div>
-<div style="display:none;">
-	<div id="b-popup-1" class="b-block">
+<div style="display:block;">
+		<div id="b-popup-1" class="b-block">
 			<div class="for_all b-popup " >
 				<h2 class="b-title">Заполните поля<br>для получения презентации</h2>
 				<div class="modal_cont clearfix">
@@ -412,6 +427,27 @@
 				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 			</div>
 		</div>
-	</div>
+		<div id="b-popup-3" class="b-block">
+			<div class="for_all b-popup " >
+				<h2 class="b-title">Заказать обратный звонок</h2>
+				<div class="modal_cont clearfix">
+					<div class="modal_img left">
+						<img src="img/modal_star.png">
+					</div>
+					<div class="form right">
+						<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+							<div class="b-popup-form">
+								<input type="text" id="name" name="name" placeholder="Ваше имя" required/><br>
+								<input type="text" id="tel" name="phone" placeholder="Ваш телефон" required/><br>
+								<input type="text" id="email" name="email" placeholder="Ваш email"/><br>
+								<input type="hidden" name="subject" value="Оставить заявку"/>
+								<input type="submit" class="ajax b-yellow-butt" value="Оставить заявку">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
 </body>
 </html>
