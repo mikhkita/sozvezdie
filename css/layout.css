@@ -105,6 +105,7 @@ body {
 	font-family: 'LatoLight';
 	overflow-x: hidden;
 	color: #fff;
+    -webkit-text-size-adjust: none;
 }
 a{
 	text-decoration: none;
@@ -262,6 +263,7 @@ input:-moz-placeholder {
             font-size: 21px;
             text-transform: uppercase;
             padding-bottom: 20px;
+            max-height: 10000px;
         }
             .b-head .slide-top-text span {
                 color: #f8e12b;
@@ -290,6 +292,7 @@ input:-moz-placeholder {
                 padding-top: 40px;
                 font-family: 'Days';
                 font-size: 24px;
+                max-height: 10000px;
             }
                 .b-head .slide-bott-text .p1 span {
                     
@@ -299,6 +302,7 @@ input:-moz-placeholder {
                 font-family: 'RobotoBold';
                 font-size: 22px;
                 padding-bottom: 20px;
+                max-height: 10000px;
             }
                 .b-head .slide-bott-text .p2 span {
                     
@@ -404,28 +408,29 @@ input:-moz-placeholder {
     }
     .b-intrested .intrested_tabs .tab-star-cont img {
         height: 141px;
-        width: 105px;
+        width: 103px;
         padding-top: 24px;
         margin-right: 2px;
     }
     .b-intrested .intrested_tabs li:nth-child(1) .tab-star-cont img {
         height: 141px;
         width: 103px;
-        padding-top: 24px;
-        margin-left: -2px;
+        padding-top: 22px;
+        margin-left: 0px;
     }
     .b-intrested .intrested_tabs li:nth-child(2) .tab-star-cont img {
         width: 106px;
-        padding-top: 23px;
+        padding-top: 24px;
         margin-left: 3px; 
     }
     .b-intrested .intrested_tabs li:nth-child(3) .tab-star-cont img {
         width: 91px;
-        padding-top: 24px; 
+        padding-top: 25px; 
+        margin-left: 2px;
     }
     .b-intrested .intrested_tabs li:nth-child(4) .tab-star-cont img {
         width: 110px;
-        padding-top: 26px;
+        padding-top: 25px;
         margin-left: 2px; 
     }
 .b-intrested .intrested_tab_container {
@@ -471,6 +476,7 @@ input:-moz-placeholder {
         width: 360px;
         margin: 0 auto;
         margin-bottom: 2px;
+        max-height: 10000px;
     }
         .b-intrested .b-yellow-butt:active {
             border: none;
@@ -528,6 +534,7 @@ input:-moz-placeholder {
 .b-that_get .b-title {
     color: #343c79;
     text-align: left;
+    max-height: 10000px;
 }
 .b-that_get .that_get-cont {
     font-family: 'LatoLight';
@@ -535,6 +542,7 @@ input:-moz-placeholder {
     color: #242424;
     text-align: left;
     overflow-x: hidden;
+    max-height: 10000px;
 }
     .b-that_get .that_get-cont span {
         font-family: 'LatoSemibold';
@@ -554,25 +562,30 @@ input:-moz-placeholder {
     position: absolute;
     top: 0px;
     right: -140px;
+    height: 100%;
 }
 
 .that_get_after_img-2 {
     position: absolute;
+    height: 100%;
 }
 
 .that_get_after_img-3 {
     position: absolute;
     right: -85px;
+    height: 100%;
 }
 
 .that_get_after_img-4 {
     position: absolute;
     left: -69px;
+    height: 100%;
 }
 
 .that_get_after_img-5 {
     position: absolute;
     right: -260px;
+    height: 100%;
 }
     .b-that_get .that_get-1 .that_get-star {
         padding-top: 65px;
@@ -783,6 +796,9 @@ input:-moz-placeholder {
         left: 900px;
     }
 
+.b-reviews .slick-list {
+    width: 1052px;
+}
 .b-reviews .left-arrow {
     position: absolute;
     z-index: 10;
@@ -833,6 +849,7 @@ input:-moz-placeholder {
 .b-reviews .slide {
     margin: 0 auto;
     text-align: center;
+    width: 1052px;
 }
 
 
@@ -851,6 +868,7 @@ input:-moz-placeholder {
             padding-top: 0px;
             color: #000;
             padding-bottom: 15px;
+            max-height: 10000px;
         }
         .b-partners .b-partners-cont p  {
             margin-top: 35px;
@@ -858,6 +876,7 @@ input:-moz-placeholder {
             font-size: 16px;
             color: #000;
             text-align: left;
+            max-height: 10000px;
         }
             .more_inform p {
                 margin-top: 35px;
@@ -866,6 +885,7 @@ input:-moz-placeholder {
                 color: #000;
                 text-align: left;
                 padding: 0px 55px;
+                max-height: 10000px;
             }
             .more_inform .bottom_name {
                 margin-top: 60px;
