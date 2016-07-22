@@ -65,31 +65,11 @@ $(document).ready(function(){
       $('.video-open iframe').fadeIn();
     });
     
-    $('#slide_video1 img').click(function() {
+    $('.reviews_slider img.video').click(function() {
       $(this).hide();
-      $('#slide_video1 iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1');
-      $('#slide_video1 iframe').fadeIn();
+      $(this).parent('.slide').find('iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1').fadeIn();
     });
-    $('#slide_video2 img').click(function() {
-      $(this).hide();
-      $('#slide_video2 iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1');
-      $('#slide_video2 iframe').fadeIn();
-    });
-    $('#slide_video3 img').click(function() {
-      $(this).hide();
-      $('#slide_video3 iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1');
-      $('#slide_video3 iframe').fadeIn();
-    });
-    $('#slide_video4 img').click(function() {
-      $(this).hide();
-      $('#slide_video4 iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1');
-      $('#slide_video4 iframe').fadeIn();
-    });
-    $('#slide_video5 img').click(function() {
-      $(this).hide();
-      $('#slide_video5 iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1');
-      $('#slide_video5 iframe').fadeIn();
-    });
+    
 
     $('.head_slide_h2').slick({
       autoplay: true,
