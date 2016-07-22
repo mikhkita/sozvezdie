@@ -41,29 +41,7 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-    var contentString = '<div class="my_map_coord">улица Гарибальди, 6</div>';
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
-     var myPlace = new google.maps.LatLng(55.676674, 37.535385);
-     var myOptions = {
-         zoom: 16,
-         center: myPlace,
-         mapTypeId: google.maps.MapTypeId.ROADMAP,
-         disableDefaultUI: true,
-         scrollwheel: false,
-         zoomControl: true
-     }
-     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-
-     var marker = new google.maps.Marker({
-         position: myPlace,
-         map: map,
-         title: "улица Гарибальди, 6"
-     });
-
-    infowindow.open(map,marker);
-
+    
     //  var options = {
     //     $AutoPlay: true,                                
     //     $SlideDuration: 500,                            
@@ -140,5 +118,53 @@ $(document).ready(function(){
 
     pic = new Image();
     pic.src="img/modal_fon.jpg";
+
+    $('.tab_content').hide();
+    $('.intrested_tab_content:first').show();
+    $('.reviews_tab_content:first').show();
+    $('.intrested_tabs li:first').addClass('active');
+    $('.reviews_tabs li:first').addClass('active');
+
+    $('.intrested_tabs li').click(function(event) {
+        $('.intrested_tabs li').removeClass('active');
+        $(this).addClass('active');
+        $('.intrested_tab_content').hide();
+
+        var select_tab = $(this).find('a').attr("data-tab");
+        $(select_tab).fadeIn();
+    });
+
+    $('.reviews_tabs li').click(function(event) {
+        $('.reviews_tabs li').removeClass('active');
+        $(this).addClass('active');
+        $('.reviews_tab_content').hide();
+
+        var select_tab = $(this).find('a').attr("data-tab");
+        $(select_tab).fadeIn();
+    });
+
+
+    var contentString = '<div class="my_map_coord">улица Гарибальди, 6</div>';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+     var myPlace = new google.maps.LatLng(55.676674, 37.535385);
+     var myOptions = {
+         zoom: 16,
+         center: myPlace,
+         mapTypeId: google.maps.MapTypeId.ROADMAP,
+         disableDefaultUI: true,
+         scrollwheel: false,
+         zoomControl: true
+     }
+     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+     var marker = new google.maps.Marker({
+         position: myPlace,
+         map: map,
+         title: "улица Гарибальди, 6"
+     });
+
+    infowindow.open(map,marker);
 
 });

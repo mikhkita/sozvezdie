@@ -748,6 +748,10 @@ input:-moz-placeholder {
         .b-reviews .reviews_tab_content .video {
             margin: 0 auto;
         }
+            .b-reviews .reviews_tab_content img.video {
+                width: 805px;
+                height: 432px;
+            }
     #reviews_tab1 .reviews_tab_img {
         position: absolute;
         top: -59px;
