@@ -65,9 +65,11 @@ $(document).ready(function(){
       $('.video-open iframe').fadeIn();
     });
     
+
     $('.reviews_slider img.video').click(function() {
       $(this).hide();
-      $(this).parent('.slide').find('iframe').attr('src','https://www.youtube.com/embed/rgJx_prPhEA?rel=0&autoplay=1').fadeIn();
+      var video_src = $(this).parent('.slide').find('iframe').attr('data-src') + '?rel=0&autoplay=1';
+      $(this).parent('.slide').find('iframe').attr('src', video_src).fadeIn();
     });
     
 
