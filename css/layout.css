@@ -587,8 +587,9 @@ input:-moz-placeholder {
 
 .that_get_after_img-5 {
     position: absolute;
-    right: -260px;
+    right: -80px;
     height: 100%;
+    top: 10px;
 }
     .b-that_get .that_get-1 .that_get-star {
         padding-top: 65px;
