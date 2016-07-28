@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'Days';
-    src: url('../fonts/Days/days-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Days/days-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/Days/days-webfont.woff2') format('woff2'), 
-         url('../fonts/Days/days-webfont.woff') format('woff'), 
-         url('../fonts/Days/days-webfont.ttf') format('truetype');
-    font-style: normal;
+    src: url('../fonts/days.eot');
+    src: url('../fonts/days.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/days.woff2') format('woff2'),
+         url('../fonts/days.woff') format('woff'),
+         url('../fonts/days.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
 
 }
 

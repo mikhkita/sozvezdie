@@ -98,32 +98,34 @@ $(document).ready(function(){
 				customHandlers[$this.attr("data-beforeAjax")]($this);
 			}
 
-  			$.ajax({
-			  	type: $(this).attr("method"),
-			  	url: $(this).attr("action"),
-			  	data:  $this.serialize(),
-				success: function(msg){
-					var $form;
-					if( msg == "1" ){
-						window.location.href="thanks.html";
-						return true;
-						//$form = $thanks;
-					}else{
-						$form = $("#b-popup-error");
-					}
+  	// 		$.ajax({
+			//   	type: $(this).attr("method"),
+			//   	url: $(this).attr("action"),
+			//   	data:  $this.serialize(),
+			// 	success: function(msg){
+			// 		var $form;
+			// 		if( msg == "1" ){
+			// 			window.location.href="thanks.php";
+			// 			return true;
+			// 			//$form = $thanks;
+			// 		}else{
+			// 			$form = $("#b-popup-error");
+			// 		}
 
-					if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
-						customHandlers[$this.attr("data-afterAjax")]($this);
-					}
+			// 		if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
+			// 			customHandlers[$this.attr("data-afterAjax")]($this);
+			// 		}
 
-					$this.find("input[type=text],textarea").val("");
-					$.fancybox.open({
-						content : $form,
-						padding : 0
-					});	
-				}
-			});
+			// 		$this.find("input[type=text],textarea").val("");
+			// 		$.fancybox.open({
+			// 			content : $form,
+			// 			padding : 0
+			// 		});	
+			// 	}
+			// });
+	
+  		}else{
+  			return false;
   		}
-  		return false;
   	});
 });
