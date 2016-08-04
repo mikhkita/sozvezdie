@@ -591,6 +591,11 @@ input:-moz-placeholder {
     height: 100%;
     top: 0px;
 }
+.that_get_after_img-1 img,
+.that_get_after_img-2 img,
+.that_get_after_img-3 img,
+.that_get_after_img-4 img,
+.that_get_after_img-5 img { height: 100%;}
     .b-that_get .that_get-1 .that_get-star {
         padding-top: 65px;
     }
