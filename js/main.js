@@ -61,7 +61,7 @@ $(document).ready(function(){
     // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
     $('.video-open img').click(function() {
       $(this).hide();
-      $('.video-open iframe').attr('src','https://www.youtube.com/embed/5YSJkSUO-GY?rel=0&autoplay=1');
+      $('.video-open iframe').attr('src','https://www.youtube.com/embed/xk-QjnoFEm4?rel=0&autoplay=1');
       $('.video-open iframe').fadeIn();
     });
     
@@ -84,8 +84,18 @@ $(document).ready(function(){
 
     $('.reviews_slider').slick({
       dots: true,
-      prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/reviews-prev_arrow.png"></div>',
-      nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/reviews-next_arrow.png"></div>'
+      prevArrow: '<div class="arrow-cont left-arrow"><img class="arrow" src="img/reviews-prev_arrow.png"></div>',
+      nextArrow: '<div class="arrow-cont right-arrow"><img class="arrow" src="img/reviews-next_arrow.png"></div>'
+    });
+
+
+    $('.reviews_slider .arrow').click(function() {
+      $('.reviews_slider .slick-active').find('iframe').attr('src', '').hide();
+      $('.reviews_slider .slick-active').find('img.video').fadeIn();
+    });
+    $('.b-reviews .slick-dots li button').click(function() {
+      $('.reviews_slider .slick-active').find('iframe').attr('src', '').hide();
+      $('.reviews_slider .slick-active').find('img.video').fadeIn();
     });
 
     $('.more_inform').hide();
@@ -123,6 +133,9 @@ $(document).ready(function(){
 
         var select_tab = $(this).find('a').attr("data-tab");
         $(select_tab).fadeIn();
+
+        $('.reviews_slider .slick-active').find('iframe').attr('src', '').hide();
+        $('.reviews_slider .slick-active').find('img.video').fadeIn();
     });
 
 
