@@ -61,7 +61,7 @@ $(document).ready(function(){
     // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
     $('.video-open img').click(function() {
       $(this).hide();
-      $('.video-open iframe').attr('src','https://www.youtube.com/embed/5YSJkSUO-GY?rel=0&autoplay=1');
+      $('.video-open iframe').attr('src',$('.video-open iframe').attr('src') + "?rel=0&autoplay=1");
       $('.video-open iframe').fadeIn();
     });
     
